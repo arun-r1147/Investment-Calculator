@@ -14,7 +14,7 @@ export const Logic: FC = () => {
       const isValidInput = inputValues.duration >= 1;
       const onChangeHandler = (key: string, value: number) => {
         setInputValues((prevValue) => {
-          return { ...prevValue, [key]: +value };
+          return { ...prevValue, [key]: value };
         });
       };
   return (

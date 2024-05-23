@@ -1,21 +1,8 @@
 import { FC } from "react";
 import { calculateInvestmentResults, formatter } from "../util/investment";
+import { LogsProps, Result } from "./types";
 
-interface LogsProps {
-  inputValues: {
-    initial: number;
-    annual: number;
-    returns: number;
-    duration: number;
-  };
-}
 
-interface Result {
-  year: number;
-  interest: number;
-  valueEndOfYear: number;
-  annual: number;
-}
 
 const initialInvestment = (data: Result) => {
   return data.valueEndOfYear - data.interest - data.annual;

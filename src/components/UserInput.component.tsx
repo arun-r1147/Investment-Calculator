@@ -1,15 +1,7 @@
 import { FC } from "react";
-// import calculationMethod from '../util/investment.js'
+import { UserInputProps } from "./types";
 
-interface UserInputProps {
-  value: {
-    initial: number;
-    annual: number;
-    returns: number;
-    duration: number;
-  };
-  onChange: (key: string, value: number) => void;
-}
+
 
 export const UserInput: FC<UserInputProps> = ({ onChange, value }) => {
   return (
